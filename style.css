@@ -110,4 +110,35 @@ section {
     background-color: #333;
     color: white;
 }
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    .right-content {
+        width: 100%; /* Make resume full width */
+    }
+
+    .research-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .research-gallery img {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px; /* Slightly reduce size on smaller screens */
+    }
+}
 
