@@ -111,13 +111,14 @@ section {
     color: white;
 }
 /* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .container {
         flex-direction: column; /* Stack content on smaller screens */
     }
 
     .right-content {
         width: 100%; /* Make resume full width */
+        align-self: center;
     }
 
     .research-gallery {
