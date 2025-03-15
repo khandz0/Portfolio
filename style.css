@@ -27,14 +27,14 @@ body {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 /* Resume Section */
-.right-content h2 {
+.right-content section h2 {
     text-align: center;
     color: #E0E0E0;
 }
 
-.right-content embed {
+.right-content section embed {
     width: 100%;
-    height: 750px; /* Bigger resume */
+    height: 680px; /* Bigger resume */
     border: 1px solid #E0E0E0;
 }
 /* Profile Picture - Make it Larger */
@@ -57,7 +57,7 @@ body {
 }
 
 /* Make sections look sharper */
-section, .right-content {
+section {
     border-radius: 0px;
 }
 
@@ -100,20 +100,14 @@ section {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 
-
-.dark-mode {
-    background-color: #222;
-    color: white;
-}
-
-.dark-mode section {
-    background-color: #333;
-    color: white;
-}
 /* Responsive Design for Mobile */
 @media screen and (max-width: 600px) {
     .container {
         flex-direction: column; /* Stack content on smaller screens */
+    }
+    .left-content {
+        width: 100%;
+        align-self: center;
     }
 
     .right-content {
@@ -139,7 +133,7 @@ section {
     }
 
     .about-image img {
-        width: 200px; /* Slightly reduce size on smaller screens */
+        width: 80%; /* Slightly reduce size on smaller screens */
     }
 }
 
