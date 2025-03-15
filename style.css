@@ -112,6 +112,7 @@ section {
     }
 
     .right-content {
+        appearance: none;
         width: 100%; /* Make resume full width */
         align-self: center;
     }
