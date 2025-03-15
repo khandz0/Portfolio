@@ -102,40 +102,46 @@ section {
 }
 
 /* Responsive Design for Mobile */
+/* Mobile Layout Fix */
 @media screen and (max-width: 600px) {
     .container {
-        flex-direction: column; /* Stack content on smaller screens */
-    }
-    .left-content {
-        width: 100%;
-        align-self: center;
-    }
-
-    .right-content {
-        appearance: none;
-        width: 100%; /* Make resume full width */
-        align-self: center;
-    }
-
-    .research-gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .research-gallery img {
-        width: 90%;
-        max-width: 400px;
-        margin-bottom: 10px;
+        flex-direction: column; /* Stack everything in one column */
+        align-items: center; /* Center content */
     }
 
     .about-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .about-image img {
-        width: 80%; /* Slightly reduce size on smaller screens */
+        width: 90%; /* Make profile image larger */
+        max-width: 250px;
+    }
+
+    .about-text {
+        width: 90%; /* Ensure text stays readable */
+        text-align: center;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .resume-container {
+        width: 100%; /* Make it take full width */
+        padding: 10px; /* Add padding for better spacing */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .resume-container embed {
+        width: 100%;
+        height: 90vh; /* Adjust height for better fit */
+    }
+
+    .resume-container h2 {
+        text-align: center; /* Center the Resume title */
+        font-size: 1.5rem; /* Adjust font size for mobile */
     }
 }
-
