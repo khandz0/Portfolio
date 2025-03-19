@@ -2,7 +2,7 @@
 
 Welcome to my first personal portfolio website
 
-![Portfolio Preview](./ExtraFile/oldportfolio.png)
+![Portfolio Preview](/ExtraFile/oldportfolio.png)
 
 ## Live Portfolio
 
