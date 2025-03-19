@@ -9,36 +9,39 @@ body {
 
 /* Layout: Two-Column Split */
 .container {
-    display: flex;
+    display: grid;
     gap: 20px;
     padding: 20px;
 }
 
 /* Left Content Styling */
-.left-content {
+/* .left-content {
     flex: 2;
-}
+} */
 
 /* Right Content Styling (Resume Section) */
-.right-content {
-    flex: 1.3; /* Slightly less than half but larger than before */
+/* .right-content {
+    flex: 1.3; /* Slightly less than half but larger than before 
     background-color: #2C2C2C;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-}
+} */
 /* Resume Section */
 .resume-container h2 {
     text-align: center;
     color: #E0E0E0;
 }
 
-.resume-container  embed {
+.resume-container embed {
     width: 100%;
     height: 740px; /* Bigger resume */
     border: 1px solid #E0E0E0;
     background-color: white;
 }
 /* Profile Picture - Make it Larger */
+.about, .projects, .contact, .resume-container {
+    max-width: 256px;
+}
 .about-image img {
     width: 300px; /* Increased size */
     height: auto;
@@ -57,10 +60,11 @@ body {
     flex: 1;
 }
 
-/* Make sections look sharper */
-section {
-    border-radius: 0px;
+#contact embed{
+    display: none;
 }
+
+/* Make sections look sharper */
 
 
 /* Header */
@@ -103,7 +107,7 @@ section {
 
 /* Responsive Design for Mobile */
 /* Mobile Layout Fix */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack everything in one column */
         align-items: center; /* Center content */
@@ -125,23 +129,22 @@ section {
         text-align: center;
     }
 
-    .right-content {
-        width: 100%;
-        padding: 10px;
-    }
     .resume-container {
-        width: 100%; /* Make it take full width */
+        display: none;
         padding: 10px; /* Add padding for better spacing */
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .resume-container embed {
         width: 100%;
-        height: 90vh; /* Adjust height for better fit */
+         /* Adjust height for better fit */
     }
 
     .resume-container h2 {
         text-align: center; /* Center the Resume title */
         font-size: 1.5rem; /* Adjust font size for mobile */
     }
+    /* #contact embed {
+        display: contents;
+    } */
 }
